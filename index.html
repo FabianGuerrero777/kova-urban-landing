@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Kova Urban — Streetwear de alta gama con envíos a toda Colombia. Ropa urbana, estilo oversize, jeans cargo y más. Bogotá - Bosa.">
+  <meta name="theme-color" content="#0A0A0A">
+  <title>KOVA URBAN | Streetwear de Alta Gama — Colombia 🇨🇴</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/img/logopng.png">
+</head>
+
+<body>
+
+  <!-- ====== PRELOADER ====== -->
+  <div class="preloader" id="preloader">
+    <img src="assets/img/logopng.png" alt="Kova Urban" class="preloader-logo">
+  </div>
+
+  <!-- ====== NAVBAR ====== -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Navegación principal">
+    <a href="#" aria-label="Kova Urban — Inicio">
+      <img src="assets/img/logopng.png" alt="Kova Urban Logo" class="navbar-logo">
+    </a>
+    <ul class="navbar-links" id="navbarLinks">
+      <li><a href="#hero">Inicio</a></li>
+      <li><a href="#catalogo">Catálogo</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+    <div class="navbar-socials">
+      <!-- Instagram -->
+      <a href="#" aria-label="Instagram" target="_blank" rel="noopener">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+        </svg>
+      </a>
+      <!-- WhatsApp -->
+      <a href="https://wa.me/573001234567" aria-label="WhatsApp" target="_blank" rel="noopener">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+      </a>
+    </div>
+    <div class="hamburger" id="hamburger" aria-label="Menú" role="button" tabindex="0">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav" id="mobileNav">
+    <a href="#hero" class="mobile-link">Inicio</a>
+    <a href="#catalogo" class="mobile-link">Catálogo</a>
+    <a href="#contacto" class="mobile-link">Contacto</a>
+  </div>
+
+  <!-- ====== HERO SECTION ====== -->
+  <section class="hero" id="hero">
+    <!-- Video Background -->
+    <div class="hero-video-container">
+      <video class="hero-video" autoplay muted loop playsinline poster="assets/img/prenda1.png">
+        <source src="https://cdn.coverr.co/videos/coverr-models-walking-in-the-dark-4821/1080p.mp4" type="video/mp4">
+      </video>
+    </div>
+
+    <!-- Dark Overlay -->
+    <div class="hero-overlay"></div>
+
+    <!-- Red Particle Lines -->
+    <div class="hero-particles" aria-hidden="true">
+      <div class="line" style="left: 10%;"></div>
+      <div class="line" style="left: 25%;"></div>
+      <div class="line" style="left: 50%;"></div>
+      <div class="line" style="left: 75%;"></div>
+      <div class="line" style="left: 90%;"></div>
+    </div>
+
+    <!-- Hero Content -->
+    <div class="hero-content">
+      <img src="assets/img/logopng.png" alt="Kova Urban Logo" class="hero-center-logo" id="heroLogo">
+      <span class="hero-badge" id="heroBadge">NEW DROP 2026</span>
+      <h1 class="hero-title" id="heroTitle">
+        EL ESTILO<br>
+        <span class="accent">NUNCA MUERE.</span>
+      </h1>
+      <p class="hero-subtitle" id="heroSubtitle">
+        Streetwear de alta gama con envíos a toda Colombia 🇨🇴
+      </p>
+      <a href="#catalogo" class="hero-cta" id="heroCta">
+        VER ÚLTIMO DROP
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="5" y1="12" x2="19" y2="12"></line>
+          <polyline points="12 5 19 12 12 19"></polyline>
+        </svg>
+      </a>
+    </div>
+
+    <!-- Scroll Indicator -->
+    <div class="scroll-indicator" id="scrollIndicator">
+      <div class="mouse"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ====== MARQUEE BANNER ====== -->
+  <div class="marquee-section" aria-hidden="true">
+    <div class="marquee-track" id="marqueeTrack">
+      <div class="marquee-item"><span class="dot"></span> STREETWEAR</div>
+      <div class="marquee-item"><span class="dot"></span> BOGOTÁ</div>
+      <div class="marquee-item"><span class="dot"></span> OVERSIZE</div>
+      <div class="marquee-item"><span class="dot"></span> KOVA URBAN</div>
+      <div class="marquee-item"><span class="dot"></span> ENVÍOS NACIONALES</div>
+      <div class="marquee-item"><span class="dot"></span> STREETWEAR</div>
+      <div class="marquee-item"><span class="dot"></span> BOGOTÁ</div>
+      <div class="marquee-item"><span class="dot"></span> OVERSIZE</div>
+      <div class="marquee-item"><span class="dot"></span> KOVA URBAN</div>
+      <div class="marquee-item"><span class="dot"></span> ENVÍOS NACIONALES</div>
+      <div class="marquee-item"><span class="dot"></span> STREETWEAR</div>
+      <div class="marquee-item"><span class="dot"></span> BOGOTÁ</div>
+      <div class="marquee-item"><span class="dot"></span> OVERSIZE</div>
+      <div class="marquee-item"><span class="dot"></span> KOVA URBAN</div>
+      <div class="marquee-item"><span class="dot"></span> ENVÍOS NACIONALES</div>
+    </div>
+  </div>
+
+  <!-- ====== CATALOG SECTION ====== -->
+  <section class="catalog" id="catalogo">
+    <div class="section-header reveal-up">
+      <span class="section-tag">Colección 2026</span>
+      <div class="red-line"></div>
+      <h2 class="section-title">ÚLTIMO DROP</h2>
+      <p class="section-subtitle">Piezas exclusivas seleccionadas para los que marcan tendencia.</p>
+    </div>
+
+    <div class="product-grid">
+
+      <!-- Card 1 -->
+      <div class="product-card reveal-up" id="product1">
+        <div class="product-card-image">
+          <span class="product-badge">Nuevo</span>
+          <img src="assets/img/prenda1.png" alt="Outfit Polo Stüssy + Jeans Cargo Oversize" loading="lazy">
+        </div>
+        <div class="product-card-info">
+          <h3 class="product-name">OUTFIT POLO STÜSSY + JEANS CARGO</h3>
+          <p class="product-category">Set Completo</p>
+          <p class="product-price">$280.000 <span class="currency">COP</span></p>
+          <a href="https://wa.me/573001234567?text=Hola%20Kova%20Urban!%20Me%20interesa%20el%20Outfit%20Polo%20St%C3%BCssy%20%2B%20Jeans%20Cargo" 
+             class="btn-whatsapp" target="_blank" rel="noopener" id="btnWhatsapp1">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+            </svg>
+            Comprar por WhatsApp
+          </a>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="product-card reveal-up" id="product2">
+        <div class="product-card-image">
+          <span class="product-badge">Hot</span>
+          <img src="assets/img/prenda2.png" alt="Outfit Suede Tee + Jeans Dark Wash" loading="lazy">
+        </div>
+        <div class="product-card-info">
+          <h3 class="product-name">OUTFIT SUEDE TEE + JEANS DARK WASH</h3>
+          <p class="product-category">Set Completo</p>
+          <p class="product-price">$250.000 <span class="currency">COP</span></p>
+          <a href="https://wa.me/573001234567?text=Hola%20Kova%20Urban!%20Me%20interesa%20el%20Outfit%20Suede%20Tee%20%2B%20Jeans%20Dark%20Wash" 
+             class="btn-whatsapp green" target="_blank" rel="noopener" id="btnWhatsapp2">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+            </svg>
+            Comprar por WhatsApp
+          </a>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="product-card reveal-up" id="product3">
+        <div class="product-card-image">
+          <span class="product-badge">Exclusivo</span>
+          <img src="assets/img/prenda3.png" alt="Outfit Leather Jacket + Jeans Vintage" loading="lazy">
+        </div>
+        <div class="product-card-info">
+          <h3 class="product-name">OUTFIT LEATHER JACKET + JEANS VINTAGE</h3>
+          <p class="product-category">Set Premium</p>
+          <p class="product-price">$350.000 <span class="currency">COP</span></p>
+          <a href="https://wa.me/573001234567?text=Hola%20Kova%20Urban!%20Me%20interesa%20el%20Outfit%20Leather%20Jacket%20%2B%20Jeans%20Vintage" 
+             class="btn-whatsapp" target="_blank" rel="noopener" id="btnWhatsapp3">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+            </svg>
+            Comprar por WhatsApp
+          </a>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="product-card reveal-up" id="product4">
+        <div class="product-card-image">
+          <span class="product-badge">Drop</span>
+          <img src="assets/img/prenda4.png" alt="Outfit Hoodie Oversize + Cargo Pants" loading="lazy">
+        </div>
+        <div class="product-card-info">
+          <h3 class="product-name">OUTFIT HOODIE OVERSIZE + CARGO PANTS</h3>
+          <p class="product-category">Set Completo</p>
+          <p class="product-price">$300.000 <span class="currency">COP</span></p>
+          <a href="https://wa.me/573001234567?text=Hola%20Kova%20Urban!%20Me%20interesa%20el%20Outfit%20Hoodie%20Oversize%20%2B%20Cargo%20Pants" 
+             class="btn-whatsapp green" target="_blank" rel="noopener" id="btnWhatsapp4">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+            </svg>
+            Comprar por WhatsApp
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ====== BRAND BANNER ====== -->
+  <section class="brand-banner" aria-hidden="true">
+    <div class="brand-banner-content">
+      <p class="brand-large-text reveal-scale">
+        <span class="fill">KOVA</span> URBAN
+      </p>
+      <p class="brand-tagline reveal-up">Donde el asfalto se convierte en pasarela.</p>
+    </div>
+  </section>
+
+  <!-- ====== FOOTER ====== -->
+  <footer class="footer" id="contacto">
+
+    <!-- Trust Banner -->
+    <div class="trust-banner">
+      <div class="trust-grid">
+
+        <!-- Envíos -->
+        <div class="trust-item reveal-left">
+          <div class="trust-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <rect x="1" y="3" width="15" height="13"></rect>
+              <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
+              <circle cx="5.5" cy="18.5" r="2.5"></circle>
+              <circle cx="18.5" cy="18.5" r="2.5"></circle>
+            </svg>
+          </div>
+          <div class="trust-text">
+            <h4>Envíos Seguros</h4>
+            <p>A nivel nacional — toda Colombia 🇨🇴</p>
+          </div>
+        </div>
+
+        <!-- Asesoría -->
+        <div class="trust-item reveal-left">
+          <div class="trust-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              <path d="M12 8v4l3 3"></path>
+            </svg>
+          </div>
+          <div class="trust-text">
+            <h4>Asesoría de Imagen</h4>
+            <p>Personalizada para tu estilo urbano</p>
+          </div>
+        </div>
+
+        <!-- Ubicación -->
+        <div class="trust-item reveal-left">
+          <div class="trust-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+          </div>
+          <div class="trust-text">
+            <h4>Bogotá — Bosa</h4>
+            <p>Kova Urban · Punto de encuentro</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+      <a href="#" aria-label="Kova Urban">
+        <img src="assets/img/logopng.png" alt="Kova Urban" class="footer-logo">
+      </a>
+
+      <p class="footer-copy">© 2026 Kova Urban. Todos los derechos reservados.</p>
+
+      <div class="footer-socials">
+        <!-- Instagram -->
+        <a href="#" aria-label="Instagram" target="_blank" rel="noopener">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+          </svg>
+        </a>
+        <!-- TikTok -->
+        <a href="#" aria-label="TikTok" target="_blank" rel="noopener">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1v-3.5a6.37 6.37 0 00-.79-.05A6.34 6.34 0 003.15 15.2a6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.34-6.34V8.89a8.28 8.28 0 004.76 1.52v-3.4a4.85 4.85 0 01-1-.32z"/>
+          </svg>
+        </a>
+        <!-- WhatsApp -->
+        <a href="https://wa.me/573001234567" aria-label="WhatsApp" target="_blank" rel="noopener">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ====== FLOATING WHATSAPP BUTTON ====== -->
+  <a href="https://wa.me/573001234567?text=Hola%20Kova%20Urban!%20Quiero%20más%20info%20sobre%20sus%20productos" 
+     class="whatsapp-float" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp" id="whatsappFloat">
+    <span class="pulse-ring"></span>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+
+  <!-- ====== SCRIPTS ====== -->
+  <script src="js/main.js"></script>
+
+</body>
+</html>
