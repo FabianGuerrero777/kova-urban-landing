@@ -120,18 +120,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
 
-    // --- Hero title parallax ---
-    gsap.to('.hero-content', {
-      y: 150,
-      opacity: 0,
-      ease: 'none',
-      scrollTrigger: {
-        trigger: '.hero',
-        start: '30% top',
-        end: 'bottom top',
-        scrub: 1,
-      }
-    });
+
 
     // --- Red particle line animations ---
     document.querySelectorAll('.hero-particles .line').forEach((line, i) => {
